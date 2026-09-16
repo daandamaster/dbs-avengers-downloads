@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DBS × Avengers — Full-Pace Fight</title>
+  <style>
+    :root {
+      --bg: #0a0a1a;
+      --card: #1e1e2e;
+      --text: #f2f2f7;
+      --muted: #a0a0b8;
+      --accent: #00f0ff;
+      --gold: #ffd700;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, sans-serif;
+      background: radial-gradient(1200px 600px at 50% -10%, #1e1e2e 0%, var(--bg) 55%);
+      color: var(--text);
+      min-height: 100vh;
+      line-height: 1.5;
+    }
+    main { max-width: 920px; margin: 0 auto; padding: 40px 20px 80px; }
+    h1 { font-size: clamp(1.6rem, 4vw, 2.4rem); margin: 0 0 8px; letter-spacing: 0.02em; }
+    .sub { color: var(--muted); margin-bottom: 28px; }
+    .badge {
+      display: inline-block; font-size: 0.75rem; letter-spacing: 0.08em;
+      text-transform: uppercase; color: var(--bg); background: var(--accent);
+      padding: 4px 10px; border-radius: 999px; font-weight: 700; margin-bottom: 14px;
+    }
+    .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin: 24px 0 32px; }
+    .grid img {
+      width: 100%; height: 120px; object-fit: cover; border-radius: 12px;
+      border: 1px solid #2a2a3d; background: #111;
+    }
+    video {
+      width: 100%; border-radius: 14px; background: #000;
+      border: 1px solid #2a2a3d; margin: 8px 0 28px;
+    }
+    .card {
+      background: var(--card); border: 1px solid #2a2a3d; border-radius: 14px;
+      padding: 18px 18px 16px; margin-bottom: 14px;
+    }
+    .card h2 { margin: 0 0 6px; font-size: 1.05rem; }
+    .card p { margin: 0 0 12px; color: var(--muted); font-size: 0.92rem; }
+    a.btn {
+      display: inline-block; text-decoration: none; color: var(--bg);
+      background: linear-gradient(90deg, var(--accent), #7ef9ff);
+      font-weight: 700; padding: 10px 14px; border-radius: 10px; margin-right: 8px; margin-bottom: 8px;
+    }
+    a.btn.secondary { background: #2a2a3d; color: var(--text); }
+    footer { margin-top: 36px; color: var(--muted); font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="badge">GPP-Core Mk VII · Confidential</div>
+    <h1>Dragon Ball Super × Avengers</h1>
+    <p class="sub">Full-Pace Fight — film, stills &amp; production pack</p>
+
+    <div class="grid">
+      <img src="assets/previews/standoff.png" alt="Scene 1 standoff" />
+      <img src="assets/previews/braid-lock.png" alt="Scene 7 braid lock" />
+      <img src="assets/previews/cataclysm.png" alt="Scene 7 cataclysm" />
+      <img src="assets/previews/aftermath-nod.png" alt="Scene 8 aftermath" />
+    </div>
+
+    <h2 style="margin-bottom:8px;">Film</h2>
+    <p class="sub" style="margin-top:0;">Stills-montage Scene 1 → 7 → 8 · ~3:34 · 720p</p>
+    <video controls preload="metadata" src="assets/film-720p.mp4"></video>
+    <p><a class="btn" href="assets/film-720p.mp4" download>Download film (720p)</a></p>
+
+    <div class="card">
+      <h2>Stills</h2>
+      <p>PNG packs per scene</p>
+      <a class="btn" href="assets/stills-scene-01.zip" download>Scene 1 (17)</a>
+      <a class="btn" href="assets/stills-scene-07.zip" download>Scene 7 (16)</a>
+      <a class="btn" href="assets/stills-scene-08.zip" download>Scene 8 (12)</a>
+    </div>
+
+    <div class="card">
+      <h2>Documents</h2>
+      <p>Production bible + shot lists + prompts</p>
+      <a class="btn" href="assets/production-pack.pdf" download>Complete production PDF</a>
+      <a class="btn secondary" href="assets/pdfs-and-docs.zip" download>PDFs &amp; docs zip</a>
+    </div>
+
+    <footer>
+      Internal use only · Hosted for Daan Langeweg · Generated from GPP-Core Mk VII materials
+    </footer>
+  </main>
+</body>
+</html>
